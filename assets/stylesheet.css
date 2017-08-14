@@ -1,3 +1,16 @@
+.row-centered {
+  text-align: center;
+}
+.col-centered {
+  display: inline-block;
+  vertical-align: top;
+  float: none;
+  /* reset the text-align */
+  text-align: left;
+  /* inline-block bootstrap space fix */
+  margin-right: -4px;
+}
+
 h1, h2 {
   text-align: center;
 }
@@ -229,4 +242,47 @@ section.module.parallax-4 {
     width: 80%;
     padding-left: 20%;
   }
+}
+
+
+
+/********* localisation ************/
+
+.col-en, .col-de,
+.en, .de {
+  display: none;
+}
+.col-en:lang(en),
+.col-de:lang(de),
+.col-en:lang(all), .col-de:lang(all) {
+  display: inline-block;
+}
+
+p.en:lang(en), p.de:lang(de),
+p.en:lang(all), p.de:lang(all) {
+  display: block;
+}
+
+span.en:lang(en), span.de:lang(de),
+span.en:lang(all), span.de:lang(all) {
+  display: inline;
+}
+
+/* For multilingual titles, we separate with an em-dash */
+span.en:lang(all):after {
+  content: " — ";
+}
+
+/* For multilingual paragraphs, we italicise the German */
+p.de:lang(all) {
+  font-style: italic;
+}
+
+.col-en p:lang(all):first-child::before {
+  content: "English: ";
+  font-weight: bold;
+}
+.col-de p:lang(all):first-child::before {
+  content: "Deutsch: ";
+  font-weight: bold;
 }
