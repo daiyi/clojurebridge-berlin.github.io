@@ -108,19 +108,19 @@ section.module.content {
 
 /* Here are the pictures */
 section.module.parallax-1 {
-  background-image: url("/images/cb1.jpg");
+  background-image: url("../images/cb1.jpg");
   opacity: 0.8;
 }
 section.module.parallax-2 {
-  background-image: url("/images/cb2.jpg");
+  background-image: url("../images/cb2.jpg");
   opacity: 0.8;
 }
 section.module.parallax-3 {
-  background-image: url("/images/cb3.jpg");
+  background-image: url("../images/cb3.jpg");
   opacity: 0.8;
 }
 section.module.parallax-4 {
-  background-image: url("/images/cb4.jpg");
+  background-image: url("../images/cb4.jpg");
   opacity: 0.9;
 }
 
